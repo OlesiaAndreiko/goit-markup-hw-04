@@ -12,6 +12,7 @@
   --dark-bg-cl: #2f303a;
   --light-bg-cl: #f5f4fa;
   --accent-bg-btn-cl: #188ce8;
+  --overlay-header: rgba(47, 48, 58, 0.4);
 
   /* others-colors */
   --accent-cl: #2196f3;
@@ -174,12 +175,25 @@ img {
 /*  Hero section */
 
 .hero {
+  max-width: 1600px;
+  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin: 0 auto;
 
   text-align: center;
 
   background-color: var(--dark-bg-cl);
+
+  background-image: linear-gradient(
+      to top left,
+      var(--overlay-header),
+      var(--overlay-header)
+    ),
+    url(../images/hero/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -236,6 +250,15 @@ img {
   --card-item: 4;
 }
 
+.advantage-item::before {
+  display: block;
+  content: "";
+
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--light-bg-cl);
+}
+
 .advantage-title {
   margin-bottom: 10px;
 
@@ -262,6 +285,10 @@ img {
   --card-item: 4;
 
   background-color: var(--white-cl);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-desc {
@@ -315,6 +342,14 @@ img {
 .btn-filter:focus {
   background-color: var(--accent-cl);
   color: var(--white-cl);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.project-item:hover,
+.project-item:active {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-div {
