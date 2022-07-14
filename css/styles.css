@@ -187,7 +187,7 @@ img {
   background-color: var(--dark-bg-cl);
 
   background-image: linear-gradient(
-      to top left,
+      to right,
       var(--overlay-header-cl),
       var(--overlay-header-cl)
     ),
@@ -386,6 +386,14 @@ img {
   color: var(--white-cl);
 }
 
+.footer-info {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.footer-left-block {
+  margin-right: 70px;
+}
+
 .footer-logo-mb {
   display: block;
   margin-bottom: 20px;
@@ -401,4 +409,10 @@ img {
 
 .footer-contact {
   color: var(--footer-cont-cl);
+}
+
+.footer-social-title {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
 }
