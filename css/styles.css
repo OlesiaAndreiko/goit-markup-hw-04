@@ -266,9 +266,11 @@ img {
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--accent-bg-btn-cl);
-  box-shadow: var(--shadow-hero-btn);
+  
   cursor: pointer;
+ 
 }
+
 
 /* Advantage section */
 
@@ -514,9 +516,7 @@ footer .logo {
 }
 
 .social-link:hover,
-.social-link:focus,
-.footer .social-link:hover,
-.footer .social-link:hover {
+.social-link:focus {
   color: var(--white-cl);
   background-color: var(--accent-cl);
 }
