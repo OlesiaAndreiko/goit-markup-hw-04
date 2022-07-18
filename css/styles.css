@@ -266,11 +266,9 @@ img {
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--accent-bg-btn-cl);
-  
-  cursor: pointer;
- 
-}
 
+  cursor: pointer;
+}
 
 /* Advantage section */
 
