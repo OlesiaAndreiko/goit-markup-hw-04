@@ -315,9 +315,11 @@ img {
   background-color: var(--light-bg-cl);
 }
 
-.team-item {
+.team-list {
   --card-item: 4;
+}
 
+.team-item {
   background-color: var(--white-cl);
   box-shadow: var(--shadow-team);
 
@@ -349,12 +351,15 @@ img {
 
 /* Clients */
 
+.clients-list {
+  --card-item: 6;
+}
+
 .client-link {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  width: 170px;
   height: 92px;
 
   color: var(--clients-cl);
